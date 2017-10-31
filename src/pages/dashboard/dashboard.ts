@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
+import { DashboardStatsPage } from '../../pages/dashboard-stats/dashboard-stats';
+import { DashboardProfilePage } from '../../pages/dashboard-profile/dashboard-profile';
 import { SettingsPage } from '../../pages/settings/settings';
 /**
  * Generated class for the DashboardPage page.
@@ -20,8 +23,8 @@ export class DashboardPage {
   tab3: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.tab1 = SettingsPage;
-    this.tab2 = SettingsPage;
+    this.tab1 = DashboardStatsPage;
+    this.tab2 = DashboardProfilePage;
     this.tab3 = SettingsPage;
     this.tabIdx = navParams.data.tabIndex || 0;
   }

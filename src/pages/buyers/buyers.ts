@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { SettingsPage } from '../../pages/settings/settings';
+import { BuyersViewListingsPage } from '../../pages/buyers-view-listings/buyers-view-listings';
+import { BuyersOffMarketPage } from '../../pages/buyers-off-market/buyers-off-market';
+import { BuyersBulkPage } from '../../pages/buyers-bulk/buyers-bulk';
+
 
 /**
  * Generated class for the BuyersPage page.
@@ -22,9 +25,10 @@ export class BuyersPage {
   tab3: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.tab1 = SettingsPage;
-    this.tab2 = SettingsPage;
-    this.tab3 = SettingsPage;
+    this.tab1 = BuyersViewListingsPage;
+    this.tab2 = BuyersOffMarketPage;
+    this.tab3 = BuyersBulkPage;
+    
     this.tabIdx = navParams.data.tabIndex || 0;
   }
 

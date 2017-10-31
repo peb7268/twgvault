@@ -1,14 +1,14 @@
 webpackJsonp([7],{
 
-/***/ 272:
+/***/ 275:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardProfilePageModule", function() { return DashboardProfilePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BuyersBulkPageModule", function() { return BuyersBulkPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_profile__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__buyers_bulk__ = __webpack_require__(294);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,33 +18,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var DashboardProfilePageModule = (function () {
-    function DashboardProfilePageModule() {
+var BuyersBulkPageModule = (function () {
+    function BuyersBulkPageModule() {
     }
-    return DashboardProfilePageModule;
+    return BuyersBulkPageModule;
 }());
-DashboardProfilePageModule = __decorate([
+BuyersBulkPageModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__dashboard_profile__["a" /* DashboardProfilePage */],
+            __WEBPACK_IMPORTED_MODULE_2__buyers_bulk__["a" /* BuyersBulkPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__dashboard_profile__["a" /* DashboardProfilePage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__buyers_bulk__["a" /* BuyersBulkPage */]),
         ],
     })
-], DashboardProfilePageModule);
+], BuyersBulkPageModule);
 
-//# sourceMappingURL=dashboard-profile.module.js.map
+//# sourceMappingURL=buyers-bulk.module.js.map
 
 /***/ }),
 
-/***/ 284:
+/***/ 294:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardProfilePage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BuyersBulkPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,29 +57,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the DashboardProfilePage page.
+ * Generated class for the BuyersBulkPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var DashboardProfilePage = (function () {
-    function DashboardProfilePage(navCtrl, navParams) {
+var BuyersBulkPage = (function () {
+    function BuyersBulkPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    DashboardProfilePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad DashboardProfilePage');
+    BuyersBulkPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad BuyersBulkPage');
     };
-    return DashboardProfilePage;
+    return BuyersBulkPage;
 }());
-DashboardProfilePage = __decorate([
+BuyersBulkPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-dashboard-profile',template:/*ion-inline-start:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/dashboard-profile/dashboard-profile.html"*/'<!--\n  Generated template for the DashboardProfilePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>dashboard-profile</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/dashboard-profile/dashboard-profile.html"*/,
+        selector: 'page-buyers-bulk',template:/*ion-inline-start:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/buyers-bulk/buyers-bulk.html"*/'<!--\n  Generated template for the BuyersBulkPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>buyers-bulk</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/buyers-bulk/buyers-bulk.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-], DashboardProfilePage);
+], BuyersBulkPage);
 
-//# sourceMappingURL=dashboard-profile.js.map
+//# sourceMappingURL=buyers-bulk.js.map
 
 /***/ })
 

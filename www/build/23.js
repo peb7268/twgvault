@@ -1,14 +1,14 @@
 webpackJsonp([23],{
 
-/***/ 273:
+/***/ 288:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardStatsPageModule", function() { return DashboardStatsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ViewListingsPageModule", function() { return ViewListingsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_stats__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__view_listings__ = __webpack_require__(300);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,33 +18,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var DashboardStatsPageModule = (function () {
-    function DashboardStatsPageModule() {
+var ViewListingsPageModule = (function () {
+    function ViewListingsPageModule() {
     }
-    return DashboardStatsPageModule;
+    return ViewListingsPageModule;
 }());
-DashboardStatsPageModule = __decorate([
+ViewListingsPageModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__dashboard_stats__["a" /* DashboardStatsPage */],
+            __WEBPACK_IMPORTED_MODULE_2__view_listings__["a" /* ViewListingsPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__dashboard_stats__["a" /* DashboardStatsPage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__view_listings__["a" /* ViewListingsPage */]),
         ],
     })
-], DashboardStatsPageModule);
+], ViewListingsPageModule);
 
-//# sourceMappingURL=dashboard-stats.module.js.map
+//# sourceMappingURL=view-listings.module.js.map
 
 /***/ }),
 
-/***/ 285:
+/***/ 300:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardStatsPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ViewListingsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,29 +57,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the DashboardStatsPage page.
+ * Generated class for the ViewListingsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var DashboardStatsPage = (function () {
-    function DashboardStatsPage(navCtrl, navParams) {
+var ViewListingsPage = (function () {
+    function ViewListingsPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    DashboardStatsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad DashboardStatsPage');
+    ViewListingsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ViewListingsPage');
     };
-    return DashboardStatsPage;
+    return ViewListingsPage;
 }());
-DashboardStatsPage = __decorate([
+ViewListingsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-dashboard-stats',template:/*ion-inline-start:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/dashboard-stats/dashboard-stats.html"*/'<!--\n  Generated template for the DashboardStatsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>dashboard-stats</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/dashboard-stats/dashboard-stats.html"*/,
+        selector: 'page-view-listings',template:/*ion-inline-start:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/view-listings/view-listings.html"*/'<!--\n  Generated template for the ViewListingsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>view-listings</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/view-listings/view-listings.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-], DashboardStatsPage);
+], ViewListingsPage);
 
-//# sourceMappingURL=dashboard-stats.js.map
+//# sourceMappingURL=view-listings.js.map
 
 /***/ })
 

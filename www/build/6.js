@@ -1,14 +1,14 @@
 webpackJsonp([6],{
 
-/***/ 273:
+/***/ 276:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardStatsPageModule", function() { return DashboardStatsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BuyersOffMarketPageModule", function() { return BuyersOffMarketPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_stats__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__buyers_off_market__ = __webpack_require__(295);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,33 +18,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var DashboardStatsPageModule = (function () {
-    function DashboardStatsPageModule() {
+var BuyersOffMarketPageModule = (function () {
+    function BuyersOffMarketPageModule() {
     }
-    return DashboardStatsPageModule;
+    return BuyersOffMarketPageModule;
 }());
-DashboardStatsPageModule = __decorate([
+BuyersOffMarketPageModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__dashboard_stats__["a" /* DashboardStatsPage */],
+            __WEBPACK_IMPORTED_MODULE_2__buyers_off_market__["a" /* BuyersOffMarketPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__dashboard_stats__["a" /* DashboardStatsPage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__buyers_off_market__["a" /* BuyersOffMarketPage */]),
         ],
     })
-], DashboardStatsPageModule);
+], BuyersOffMarketPageModule);
 
-//# sourceMappingURL=dashboard-stats.module.js.map
+//# sourceMappingURL=buyers-off-market.module.js.map
 
 /***/ }),
 
-/***/ 285:
+/***/ 295:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardStatsPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BuyersOffMarketPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,29 +57,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the DashboardStatsPage page.
+ * Generated class for the BuyersOffMarketPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var DashboardStatsPage = (function () {
-    function DashboardStatsPage(navCtrl, navParams) {
+var BuyersOffMarketPage = (function () {
+    function BuyersOffMarketPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    DashboardStatsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad DashboardStatsPage');
+    BuyersOffMarketPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad BuyersOffMarketPage');
     };
-    return DashboardStatsPage;
+    return BuyersOffMarketPage;
 }());
-DashboardStatsPage = __decorate([
+BuyersOffMarketPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-dashboard-stats',template:/*ion-inline-start:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/dashboard-stats/dashboard-stats.html"*/'<!--\n  Generated template for the DashboardStatsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>dashboard-stats</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/dashboard-stats/dashboard-stats.html"*/,
+        selector: 'page-buyers-off-market',template:/*ion-inline-start:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/buyers-off-market/buyers-off-market.html"*/'<!--\n  Generated template for the BuyersOffMarketPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>buyers-off-market</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/buyers-off-market/buyers-off-market.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-], DashboardStatsPage);
+], BuyersOffMarketPage);
 
-//# sourceMappingURL=dashboard-stats.js.map
+//# sourceMappingURL=buyers-off-market.js.map
 
 /***/ })
 
