@@ -25743,3 +25743,7 @@ ion-navbar.toolbar {
 .home.content > .card {
   margin: 0 auto 45px;
 }
+
+.home.content > .card ion-card-title {
+  text-transform: capitalize;
+}
