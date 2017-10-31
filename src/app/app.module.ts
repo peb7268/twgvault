@@ -7,6 +7,8 @@ import { HomePage } from '../pages/home/home';
 import { WhyPage } from '../pages/why/why';
 import { ContactPage } from '../pages/contact/contact';
 import { LoginPage } from '../pages/login/login';
+import { SampleAuthedRoutePage } from '../pages/sample-authed-route/sample-authed-route';
+import { SettingsPage } from '../pages/settings/settings';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,7 +19,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     WhyPage,
     LoginPage,
-    ContactPage
+    ContactPage,
+    SampleAuthedRoutePage,
+    SettingsPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     WhyPage,
     LoginPage,
-    ContactPage
+    ContactPage,
+    SampleAuthedRoutePage,
+    SettingsPage
   ],
   providers: [
     StatusBar,

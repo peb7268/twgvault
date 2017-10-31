@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { WhyPage } from '../pages/why/why';
 import { LoginPage } from '../pages/login/login';
 import { ContactPage } from '../pages/contact/contact';
+import { SampleAuthedRoutePage } from '../pages/sample-authed-route/sample-authed-route';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,7 +27,8 @@ export class MyApp {
       { title: 'home', component: HomePage },
       { title: 'why TWG', component: WhyPage },
       { title: 'contact us', component: ContactPage },
-      { title: 'login', component: LoginPage }
+      { title: 'login', component: LoginPage },
+      { title: 'Dashboard', component: SampleAuthedRoutePage }
     ];
 
   }
