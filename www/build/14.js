@@ -1,14 +1,14 @@
 webpackJsonp([14],{
 
-/***/ 281:
+/***/ 284:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardPageModule", function() { return DashboardPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BuyersViewListingsPageModule", function() { return BuyersViewListingsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__buyers_view_listings__ = __webpack_require__(107);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var DashboardPageModule = (function () {
-    function DashboardPageModule() {
+var BuyersViewListingsPageModule = (function () {
+    function BuyersViewListingsPageModule() {
     }
-    return DashboardPageModule;
+    return BuyersViewListingsPageModule;
 }());
-DashboardPageModule = __decorate([
+BuyersViewListingsPageModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__dashboard__["a" /* DashboardPage */],
+            __WEBPACK_IMPORTED_MODULE_2__buyers_view_listings__["a" /* BuyersViewListingsPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__dashboard__["a" /* DashboardPage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__buyers_view_listings__["a" /* BuyersViewListingsPage */]),
         ],
     })
-], DashboardPageModule);
+], BuyersViewListingsPageModule);
 
-//# sourceMappingURL=dashboard.module.js.map
+//# sourceMappingURL=buyers-view-listings.module.js.map
 
 /***/ })
 

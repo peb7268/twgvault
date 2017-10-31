@@ -1,3 +1,29 @@
-page-home {
 
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900');
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+    background: url("./../assets/imgs/logo_header.png") no-repeat center 2px;
+    background-size: 10%;
+    padding: 25px 0 0;
+    margin: 10px 0 45px;
+    h1, p {
+        margin: 0;
+    }
+    p:first-child { margin: 0 0 -7px -171px; }
+    h1 {
+        margin: 0 0 -4px;
+        span { color: #143664; }
+    }
+    p.sub { font-size: 10pt; }
+}
+
+.home.content {
+    & > .card {
+        margin: 0 auto 45px;
+    }
 }
