@@ -25715,7 +25715,7 @@ ion-navbar.toolbar {
   align-items: center;
   line-height: 1;
   background: url("./../assets/imgs/logo_header.png") no-repeat center 2px;
-  background-size: 10%;
+  background-size: 80px;
   padding: 25px 0 0;
   margin: 10px 0 45px;
 }
