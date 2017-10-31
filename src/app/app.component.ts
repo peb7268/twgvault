@@ -7,17 +7,21 @@ import { HomePage } from '../pages/home/home';
 import { WhyPage } from '../pages/why/why';
 import { LoginPage } from '../pages/login/login';
 import { ContactPage } from '../pages/contact/contact';
-import { SampleAuthedRoutePage } from '../pages/sample-authed-route/sample-authed-route';
+
+import { DashboardPage } from '../pages/dashboard/dashboard';
+import { BuyersPage } from '../pages/buyers/buyers';
+import { AgentsPage } from '../pages/agents/agents';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-
+  
+  loggedIn: boolean = true;
   rootPage: any = HomePage;
-
   pages: Array<{title: string, component: any}>;
+  AuthedPages: Array<{title: string, component: any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
@@ -27,10 +31,14 @@ export class MyApp {
       { title: 'home', component: HomePage },
       { title: 'why TWG', component: WhyPage },
       { title: 'contact us', component: ContactPage },
-      { title: 'login', component: LoginPage },
-      { title: 'Dashboard', component: SampleAuthedRoutePage }
+      { title: 'login', component: LoginPage }
     ];
-
+    
+    this.AuthedPages = [
+      { title: 'Dashboard', component: DashboardPage },
+      { title: 'Buyers', component: BuyersPage },
+      { title: 'Agents', component: AgentsPage }
+    ]
   }
 
   initializeApp() {

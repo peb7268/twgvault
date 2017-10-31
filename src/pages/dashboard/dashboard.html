@@ -1,0 +1,21 @@
+<!--
+  Generated template for the SampleAuthedRoutePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Dashboard</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-tabs [selectedIndex]="tabIdx">
+<ion-tab tabIcon="speedometer" tabTitle="Stats" [root]="tab1"></ion-tab>
+<ion-tab tabIcon="contact" tabTitle="Profile" [root]="tab2"></ion-tab>
+<ion-tab tabIcon="cog" tabTitle="Settings" [root]="tab3"></ion-tab>
+</ion-tabs>

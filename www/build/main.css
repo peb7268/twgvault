@@ -25679,14 +25679,20 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-.page-nav.list .item-inner .label-md {
+.sidenav .page-nav.list .item-inner .label-md, .sidenav .authed-page-nav .item-inner .label-md {
   text-transform: capitalize;
 }
 
-.page-nav.list .item.item-md:hover {
+.sidenav .page-nav.list .item.item-md:hover, .sidenav .authed-page-nav .item.item-md:hover {
   background: #00293f;
 }
 
-.page-nav.list .item.item-md:hover .label-md {
+.sidenav .page-nav.list .item.item-md:hover .label-md, .sidenav .authed-page-nav .item.item-md:hover .label-md {
   color: #fff;
+}
+
+.sidenav .authed-page-nav {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }

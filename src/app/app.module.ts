@@ -8,7 +8,11 @@ import { WhyPage } from '../pages/why/why';
 import { ContactPage } from '../pages/contact/contact';
 import { LoginPage } from '../pages/login/login';
 import { SampleAuthedRoutePage } from '../pages/sample-authed-route/sample-authed-route';
+
 import { SettingsPage } from '../pages/settings/settings';
+import { DashboardPage } from '../pages/dashboard/dashboard';
+import { BuyersPage } from '../pages/buyers/buyers';
+import { AgentsPage } from '../pages/agents/agents';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -20,8 +24,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     WhyPage,
     LoginPage,
     ContactPage,
-    SampleAuthedRoutePage,
-    SettingsPage
+    SettingsPage,
+    DashboardPage,
+    BuyersPage,
+    AgentsPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +40,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     WhyPage,
     LoginPage,
     ContactPage,
-    SampleAuthedRoutePage,
+    DashboardPage,
+    BuyersPage,
+    AgentsPage,
     SettingsPage
   ],
   providers: [

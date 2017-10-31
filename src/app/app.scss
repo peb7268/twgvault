@@ -14,18 +14,24 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-
-.page-nav.list {
-    .item-inner {
-        .label-md {
-            text-transform: capitalize;
+.sidenav {
+    .page-nav.list, .authed-page-nav {
+        .item-inner {
+            .label-md {
+                text-transform: capitalize;
+            }
+        }
+        .item.item-md {
+            &:hover {
+                background: #00293f;
+                .label-md { color: #fff; }
+            }
         }
     }
-    .item.item-md {
-        &:hover {
-            background: #00293f;
-            .label-md { color: #fff; }
-        }
+
+    .authed-page-nav {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
     }
 }
-
