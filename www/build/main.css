@@ -25679,14 +25679,14 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-.list .item-inner:hover {
+.list .item-inner .label-md {
+  text-transform: capitalize;
+}
+
+.list .item.item-md:hover {
   background: #00293f;
 }
 
-.list .item-inner:hover .label-md {
+.list .item.item-md:hover .label-md {
   color: #fff;
-}
-
-.list .item-inner .label-md {
-  text-transform: capitalize;
 }

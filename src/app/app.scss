@@ -16,12 +16,14 @@
 // automatically applied to the <body> element in the app.
 .list {
     .item-inner {
+        .label-md {
+            text-transform: capitalize;
+        }
+    }
+    .item.item-md {
         &:hover {
             background: #00293f;
             .label-md { color: #fff; }
-        }
-        .label-md {
-            text-transform: capitalize;
         }
     }
 }
