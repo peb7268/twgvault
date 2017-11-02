@@ -17,7 +17,7 @@
 .sidenav {
     .page-nav.list, .authed-page-nav {
         .item-inner {
-            .label-md {
+            .label {
                 text-transform: capitalize;
             }
         }
@@ -33,5 +33,16 @@
         position: absolute;
         width: 100%;
         bottom: 0;
+    }
+}
+
+.content ion-card {
+    margin: 0 auto 45px;
+    img {
+        display: block;
+        min-width: 50%;
+        margin: 0 auto;
+        max-width: 100%;
+        width: auto;
     }
 }

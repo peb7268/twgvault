@@ -25680,7 +25680,7 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-.sidenav .page-nav.list .item-inner .label-md, .sidenav .authed-page-nav .item-inner .label-md {
+.sidenav .page-nav.list .item-inner .label, .sidenav .authed-page-nav .item-inner .label {
   text-transform: capitalize;
 }
 
@@ -25696,6 +25696,18 @@ ion-navbar.toolbar {
   position: absolute;
   width: 100%;
   bottom: 0;
+}
+
+.content ion-card {
+  margin: 0 auto 45px;
+}
+
+.content ion-card img {
+  display: block;
+  min-width: 50%;
+  margin: 0 auto;
+  max-width: 100%;
+  width: auto;
 }
 
 .logo {
