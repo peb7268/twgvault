@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { MockProperySearch } from '../../assets/js/mocks/property.search.SD_1'
 /**
  * Generated class for the SearchPage page.
  *
@@ -14,8 +14,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'search.html',
 })
 export class SearchPage {
-
+  private listings;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    console.log(MockProperySearch);
+    this.listings = MockProperySearch;
   }
 
   ionViewDidLoad() {

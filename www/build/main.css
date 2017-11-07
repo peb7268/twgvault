@@ -25759,3 +25759,59 @@ ion-navbar.toolbar {
 .home.content > .card ion-card-title {
   text-transform: capitalize;
 }
+
+.listing .card-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.listing .photo {
+  height: 150px;
+  width: 100%;
+  background: #ccc;
+  margin: 0 0 15px;
+}
+
+.listing .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.listing .content .col1 {
+  width: 67%;
+}
+
+.listing .content .col1 > div {
+  margin: 0 0 15px;
+}
+
+.listing .content .col1 .address p {
+  line-height: 1;
+  color: #333;
+  font-size: 12pt;
+}
+
+.listing .content .col2 {
+  width: 29%;
+}
+
+.listing .content .col2 > div {
+  margin: 0 0 15px;
+}
+
+.listing .content .col2 .price p {
+  margin: 0 0 15px;
+}

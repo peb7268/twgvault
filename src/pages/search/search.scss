@@ -1,3 +1,46 @@
-page-search {
 
+
+.listing {
+    .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .photo {
+        height: 150px;
+        width: 100%;
+        background: #ccc;
+        margin: 0 0 15px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+
+        .col1 {
+            width: 67%;
+            & > div {
+                margin: 0 0 15px;
+            }
+            .address {
+                p {
+                    line-height: 1;
+                    color: #333;
+                    font-size: 12pt;
+                }
+            }
+        }
+
+        .col2 {
+            width: 29%;
+            & > div {
+                margin: 0 0 15px;
+            }
+            .price {
+                p {
+                    margin: 0 0 15px;
+                }
+            }
+        }
+    }
 }

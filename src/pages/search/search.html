@@ -14,5 +14,45 @@
 
 
 <ion-content padding>
-  Agents Search
+  <ion-card *ngFor="let listing of listings" class="listing">
+    <ion-card-content>
+      <img src="#" class="photo">
+
+      <div class="content">
+        <div class="col1">
+              <div class="address">
+                <p>
+                  {{ listing.L_Address}}
+                </p>
+                <p>
+                  {{ listing.L_City}}, {{ listing.L_State}}
+                </p>
+              </div>
+              <div class="info">
+                beds / baths / sq. ft. / built in 
+              </div>
+              <div class="details">
+                  <p>{{ listing.L_Class }}</p>
+                  <p>{{ listing.LFD_Rooms_27 }}</p>
+              </div>
+              
+        </div>
+
+        <div class="col2">
+          <div class="price">
+            <h4 class="original_price">Original Price</h4>
+            <p>{{ listing.L_OriginalPrice}}</p>
+            
+            <h4 class="asking_price">Asking Price</h4>
+            <p>{{ listing.L_AskingPrice}}</p>
+          </div>
+
+          <div class="rent">
+            <h4>Rent</h4>
+            <p>1200</p>
+          </div>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
