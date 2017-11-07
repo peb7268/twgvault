@@ -67,7 +67,7 @@ function doAsyncProcessing(row, index, callback) {
     callback();
 }
 
-app.route('/rets')
+app.route('/rets/property')
 .get((req, res) => {
     console.log('fetching rets data');
 
@@ -132,6 +132,70 @@ app.route('/rets')
     });
 });
 
+app.route('/rets/media')
+.get((req, res) => {
+    console.log('fetching rets data');
+
+    rets.getAutoLogoutClient(clientSettings, function (client) {
+        let searchPromise = new Promise((resolve, reject) => {
+            //https://github.com/sbruno81/rets-client
+            //https://retsmd.com/index.php
+            //https://www.flexmls.com/developers/rets/tutorials/dmql-tutorial/
+            //https://cl.ly/3b202s0H1n3L
+            var count = 0;
+            var streamResult = client.search.stream.query("Media", "SD_1", "(City=Atlanta)", {limit:10, offset:4});
+            var processorStream = through2.obj((event, encoding, callback) => {
+                switch (event.type) {
+                    case 'headerInfo':
+                        console.log('   ~~~~~~~~~ Header Info ~~~~~~~~~');
+                        outputFields(event.payload);
+                        callback();
+                        break;
+                    case 'data':
+                        // event.payload is an object representing a single row of results
+                        // make sure callback is called only when all processing is complete
+                        count++;
+                        doAsyncProcessing(event.payload, count, callback);
+                    break;
+                    case 'done':
+                        // event.payload is an object containing a count of rows actually received, plus some other things
+                        // now we can resolve the auto-logout promise
+
+                        resolve(event.payload.rowsReceived);
+                        callback();                        
+                    break;
+                    case 'error':
+                        // event.payload is an Error object
+                        console.log('Error streaming RETS results: '+event.payload);
+                        streamResult.retsStream.unpipe(processorStream);
+                        processorStream.end();
+                        // we need to reject the auto-logout promise
+                        reject(event.payload);
+                        callback();
+                        break;
+                    default:
+                        // ignore other events
+                        callback();
+                }
+            });
+
+            streamResult.retsStream.pipe(processorStream);
+        });
+        
+        searchPromise.done((data) => {
+            console.log('queryResult: ');
+            console.log(queryResult);
+            res.status(200).json(queryResult);
+        })
+    })
+    .catch(function (errorInfo) {
+        var error = errorInfo.error || errorInfo;
+        console.log("   ERROR: issue encountered:");
+        outputFields(error);
+        console.log('   '+(error.stack||error).replace(/\n/g, '\n   '));
+        res.status(400).json(error)
+    });
+});
 
 //Bind to port
 app.listen(app.get('port'), function() {
