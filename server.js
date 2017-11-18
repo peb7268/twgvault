@@ -70,7 +70,6 @@ function doAsyncProcessing(row, index, callback) {
 app.route('/rets/property')
 .get((req, res) => {
     console.log('fetching rets data');
-
     rets.getAutoLogoutClient(clientSettings, function (client) {
         let searchPromise = new Promise((resolve, reject) => {
             //https://github.com/sbruno81/rets-client
@@ -118,8 +117,8 @@ app.route('/rets/property')
         });
         
         searchPromise.done((data) => {
-            console.log('queryResult: ');
-            console.log(queryResult);
+            //do map / mongo insert here
+            debugger;
             res.status(200).json(queryResult);
         })
     })
@@ -143,7 +142,7 @@ app.route('/rets/media')
             //https://www.flexmls.com/developers/rets/tutorials/dmql-tutorial/
             //https://cl.ly/3b202s0H1n3L
             var count = 0;
-            var streamResult = client.search.stream.query("Media", "SD_1", "(City=Atlanta)", {limit:10, offset:4});
+            var streamResult = client.search.stream.query("Media", "SD_1", "(ListingStatus=1)", {limit:10, offset:4});
             var processorStream = through2.obj((event, encoding, callback) => {
                 switch (event.type) {
                     case 'headerInfo':

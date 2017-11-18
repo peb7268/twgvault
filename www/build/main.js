@@ -49,51 +49,6 @@ AgentsHotsheetPage = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AgentsPropertyUploadPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the AgentsPropertyUploadPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var AgentsPropertyUploadPage = (function () {
-    function AgentsPropertyUploadPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    AgentsPropertyUploadPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad AgentsPropertyUploadPage');
-    };
-    return AgentsPropertyUploadPage;
-}());
-AgentsPropertyUploadPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-agents-property-upload',template:/*ion-inline-start:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/agents-property-upload/agents-property-upload.html"*/'<!--\n  Generated template for the AgentsPropertyUploadPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>agents-property-upload</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  agents property upload\n</ion-content>\n'/*ion-inline-end:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/agents-property-upload/agents-property-upload.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-], AgentsPropertyUploadPage);
-
-//# sourceMappingURL=agents-property-upload.js.map
-
-/***/ }),
-
-/***/ 102:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AgentsBulkCsvPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
@@ -135,7 +90,7 @@ AgentsBulkCsvPage = __decorate([
 
 /***/ }),
 
-/***/ 103:
+/***/ 102:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -143,8 +98,8 @@ AgentsBulkCsvPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_agents_hotsheet_agents_hotsheet__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_agents_property_upload_agents_property_upload__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_agents_bulk_csv_agents_bulk_csv__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_agents_property_upload_agents_property_upload__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_agents_bulk_csv_agents_bulk_csv__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_search_search__ = __webpack_require__(104);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -184,12 +139,57 @@ var AgentsPage = (function () {
 }());
 AgentsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-agents',template:/*ion-inline-start:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/agents/agents.html"*/'<!--\n  Generated template for the SampleAuthedRoutePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n      <ion-title>Agents</ion-title>\n    </ion-navbar>\n</ion-header>\n\n\n<ion-tabs [selectedIndex]="tabIdx">\n  <ion-tab tabIcon="search" tabTitle="Search Properties" [root]="tab1"></ion-tab>\n  <ion-tab tabIcon="paper" tabTitle="Hotsheet" [root]="tab2"></ion-tab>\n  <ion-tab tabIcon="albums" tabTitle="Bulk CSV Upload" [root]="tab3"></ion-tab>\n  <ion-tab tabIcon="cloud-upload" tabTitle="Property CSV Upload" [root]="tab4"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/agents/agents.html"*/,
+        selector: 'page-agents',template:/*ion-inline-start:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/agents/agents.html"*/'<!--\n  Generated template for the SampleAuthedRoutePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n      <ion-title>Agents</ion-title>\n    </ion-navbar>\n</ion-header>\n\n\n<ion-tabs [selectedIndex]="tabIdx">\n  <ion-tab tabIcon="search" tabTitle="Search Properties" [root]="tab1"></ion-tab>\n  <ion-tab tabIcon="create" tabTitle="Add Property" [root]="tab4"></ion-tab>\n  <ion-tab tabIcon="paper" tabTitle="Hotsheet" [root]="tab2"></ion-tab>\n  <ion-tab tabIcon="cloud-upload" tabTitle="Property CSV Upload" [root]="tab3"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/agents/agents.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], AgentsPage);
 
 //# sourceMappingURL=agents.js.map
+
+/***/ }),
+
+/***/ 103:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AgentsPropertyUploadPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the AgentsPropertyUploadPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var AgentsPropertyUploadPage = (function () {
+    function AgentsPropertyUploadPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    AgentsPropertyUploadPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AgentsPropertyUploadPage');
+    };
+    return AgentsPropertyUploadPage;
+}());
+AgentsPropertyUploadPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-agents-property-upload',template:/*ion-inline-start:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/agents-property-upload/agents-property-upload.html"*/'<!--\n  Generated template for the AgentsPropertyUploadPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>agents-property-upload</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list>\n    <ion-item class="exisiting-property-search">\n      <ion-input type="text" placeholder="search existing property ( enter address )"></ion-input>\n    </ion-item>\n\n    <h4>location</h4>\n    <ion-item>\n      <ion-label floating>county</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>city</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>zip</ion-label>\n      <ion-input type="password"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>map region</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n  </ion-list>\n\n  <ion-list>\n    <h4>basics</h4>\n    <ion-item>\n      <ion-label floating>list price</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>total sq. footage</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>bed rooms</ion-label>\n      <ion-input type="password"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>full baths</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>year built</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <h4>address</h4>\n    <ion-item>\n      <ion-label floating>GAMLS#</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>street no</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>street name</ion-label>\n      <ion-input type="password"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>address 2</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>subdivision</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n  </ion-list>\n  \n  <ion-list>\n    <h4>listing status</h4>\n\n    <ion-list-header>\n      availible\n    </ion-list-header>\n\n    <ion-item>\n      <ion-label>active</ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>new listing</ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n    \n    <ion-item>\n      <ion-label>increased</ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>reduced</ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>extended</ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>back on market</ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>continuing w/ kickout</ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>pending approval</ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n\n    <ion-list-header>\n      off market\n    </ion-list-header>\n    <ion-item>\n      <ion-label>under contract</ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n    \n    <ion-item>\n      <ion-label>sold</ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>lease purchase</ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>rental leased</ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>rental unavilible</ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>expired</ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>withdrawn</ion-label>\n      <ion-checkbox></ion-checkbox>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <h4>assumptions</h4>\n    <ion-item>\n      <ion-label floating>rehab</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>company fee</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>closing cost</ion-label>\n      <ion-input type="password"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>other cost</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>rent for 3 beds</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>rent for 4 beds</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>rent for 5+ beds</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>taxes</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>insurance</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>property management</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>HOA</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>vaccancy</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>maintenance</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>other expenses</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>% down</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>years to finance</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>interest rate</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>annual appreciation</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>ROI</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n\n    <ion-item>\n      <ion-label floating>cap rate</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n  </ion-list>\n\n  <button ion-button full>Submit Property</button>\n</ion-content>\n'/*ion-inline-end:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/agents-property-upload/agents-property-upload.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+], AgentsPropertyUploadPage);
+
+//# sourceMappingURL=agents-property-upload.js.map
 
 /***/ }),
 
@@ -233,7 +233,7 @@ var SearchPage = (function () {
 }());
 SearchPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-search',template:/*ion-inline-start:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/search/search.html"*/'<!--\n  Generated template for the SearchPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>search</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card *ngFor="let listing of listings" class="listing">\n    <ion-card-content>\n      <img src="{{listing.MED_media_url}}" class="photo">\n\n      <div class="content">\n        <div class="col1">\n              <div class="address">\n                <p>\n                  {{ listing.L_Address}}\n                </p>\n                <p>\n                  {{ listing.L_City}}, {{ listing.L_State}}\n                </p>\n              </div>\n              <div class="info">\n                beds / baths / sq. ft. / built in \n              </div>\n              <div class="details">\n                  <p>{{ listing.L_Class }}</p>\n                  <p>{{ listing.LFD_Rooms_27 }}</p>\n              </div>\n              \n        </div>\n\n        <div class="col2">\n          <div class="price">\n            <h4 class="original_price">Original Price</h4>\n            <p>{{ listing.L_OriginalPrice}}</p>\n            \n            <h4 class="asking_price">Asking Price</h4>\n            <p>{{ listing.L_AskingPrice}}</p>\n          </div>\n\n          <div class="rent">\n            <h4>Rent</h4>\n            <p>1200</p>\n          </div>\n        </div>\n      </div>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/search/search.html"*/,
+        selector: 'page-search',template:/*ion-inline-start:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/search/search.html"*/'<!--\n  Generated template for the SearchPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>search</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card *ngFor="let listing of listings" class="listing">\n    <ion-card-content>\n      <img src="{{listing.MED_media_url}}" class="photo">\n\n      <div class="content">\n        <div class="col1">\n              <div class="address">\n                <p>\n                  {{ listing.L_Address}}\n                </p>\n                <p>\n                  {{ listing.L_City}}, {{ listing.L_State}}\n                </p>\n              </div>\n              <div class="info">\n                {{listing.LM_Int4_7}} beds / {{listing.LM_Int4_5}}.{{listing.LM_Int4_6}} baths / {{listing.LM_Char10_18}} sq. ft. / built in {{ listing.LM_Int2_1 }} \n              </div>\n              <div class="details">\n                  <p>{{ listing.L_Class }}</p>\n                  <p>{{ listing.LFD_Rooms_27 }}</p>\n              </div>\n              \n        </div>\n\n        <div class="col2">\n          <div class="price">\n            <h4 class="original_price">Original Price</h4>\n            <p>{{ listing.L_OriginalPrice}}</p>\n            \n            <h4 class="asking_price">Asking Price</h4>\n            <p>{{ listing.L_AskingPrice}}</p>\n          </div>\n\n          <div class="rent">\n            <h4>Rent</h4>\n            <p>1200</p>\n          </div>\n        </div>\n      </div>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/search/search.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], SearchPage);
@@ -481,51 +481,6 @@ ContactPage = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardStatsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the DashboardStatsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var DashboardStatsPage = (function () {
-    function DashboardStatsPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    DashboardStatsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad DashboardStatsPage');
-    };
-    return DashboardStatsPage;
-}());
-DashboardStatsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-dashboard-stats',template:/*ion-inline-start:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/dashboard-stats/dashboard-stats.html"*/'<!--\n  Generated template for the DashboardStatsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Stats</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  Dashboard Stats Page\n</ion-content>'/*ion-inline-end:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/dashboard-stats/dashboard-stats.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-], DashboardStatsPage);
-
-//# sourceMappingURL=dashboard-stats.js.map
-
-/***/ }),
-
-/***/ 111:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardProfilePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
@@ -567,6 +522,51 @@ DashboardProfilePage = __decorate([
 
 /***/ }),
 
+/***/ 111:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardStatsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the DashboardStatsPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var DashboardStatsPage = (function () {
+    function DashboardStatsPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    DashboardStatsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad DashboardStatsPage');
+    };
+    return DashboardStatsPage;
+}());
+DashboardStatsPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-dashboard-stats',template:/*ion-inline-start:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/dashboard-stats/dashboard-stats.html"*/'<!--\n  Generated template for the DashboardStatsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Stats</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  Dashboard Stats Page\n</ion-content>'/*ion-inline-end:"/Users/peb7268/Desktop/dev/nodedev/twgvault/src/pages/dashboard-stats/dashboard-stats.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+], DashboardStatsPage);
+
+//# sourceMappingURL=dashboard-stats.js.map
+
+/***/ }),
+
 /***/ 112:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -574,8 +574,8 @@ DashboardProfilePage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_dashboard_stats_dashboard_stats__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_dashboard_profile_dashboard_profile__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_dashboard_stats_dashboard_stats__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_dashboard_profile_dashboard_profile__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_settings_settings__ = __webpack_require__(99);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -734,7 +734,7 @@ webpackEmptyAsyncContext.id = 123;
 
 var map = {
 	"../pages/agents-bulk-csv/agents-bulk-csv.module": [
-		281,
+		280,
 		20
 	],
 	"../pages/agents-hotsheet/agents-hotsheet.module": [
@@ -742,11 +742,11 @@ var map = {
 		19
 	],
 	"../pages/agents-property-upload/agents-property-upload.module": [
-		280,
+		282,
 		18
 	],
 	"../pages/agents/agents.module": [
-		282,
+		281,
 		17
 	],
 	"../pages/buyers-bulk/buyers-bulk.module": [
@@ -770,11 +770,11 @@ var map = {
 		12
 	],
 	"../pages/dashboard-profile/dashboard-profile.module": [
-		289,
+		288,
 		11
 	],
 	"../pages/dashboard-stats/dashboard-stats.module": [
-		288,
+		289,
 		10
 	],
 	"../pages/dashboard/dashboard.module": [
@@ -898,16 +898,16 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_settings_settings__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_dashboard_dashboard__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_dashboard_stats_dashboard_stats__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_dashboard_profile_dashboard_profile__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_dashboard_stats_dashboard_stats__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_dashboard_profile_dashboard_profile__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_buyers_buyers__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_buyers_view_listings_buyers_view_listings__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_buyers_off_market_buyers_off_market__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_buyers_bulk_buyers_bulk__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_agents_agents__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_agents_agents__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_agents_hotsheet_agents_hotsheet__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_agents_property_upload_agents_property_upload__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_agents_bulk_csv_agents_bulk_csv__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_agents_property_upload_agents_property_upload__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_agents_bulk_csv_agents_bulk_csv__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_search_search__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_native_status_bar__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_splash_screen__ = __webpack_require__(207);
@@ -972,16 +972,16 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                 links: [
                     { loadChildren: '../pages/agents-hotsheet/agents-hotsheet.module#AgentsHotsheetPageModule', name: 'AgentsHotsheetPage', segment: 'agents-hotsheet', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/agents-property-upload/agents-property-upload.module#AgentsPropertyUploadPageModule', name: 'AgentsPropertyUploadPage', segment: 'agents-property-upload', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/agents-bulk-csv/agents-bulk-csv.module#AgentsBulkCsvPageModule', name: 'AgentsBulkCsvPage', segment: 'agents-bulk-csv', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/agents/agents.module#AgentsPageModule', name: 'AgentsPage', segment: 'agents', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/agents-property-upload/agents-property-upload.module#AgentsPropertyUploadPageModule', name: 'AgentsPropertyUploadPage', segment: 'agents-property-upload', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/buyers-bulk/buyers-bulk.module#BuyersBulkPageModule', name: 'BuyersBulkPage', segment: 'buyers-bulk', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/buyers-off-market/buyers-off-market.module#BuyersOffMarketPageModule', name: 'BuyersOffMarketPage', segment: 'buyers-off-market', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/buyers-view-listings/buyers-view-listings.module#BuyersViewListingsPageModule', name: 'BuyersViewListingsPage', segment: 'buyers-view-listings', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/buyers/buyers.module#BuyersPageModule', name: 'BuyersPage', segment: 'buyers', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/contact/contact.module#ContactPageModule', name: 'ContactPage', segment: 'contact', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/dashboard-stats/dashboard-stats.module#DashboardStatsPageModule', name: 'DashboardStatsPage', segment: 'dashboard-stats', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/dashboard-profile/dashboard-profile.module#DashboardProfilePageModule', name: 'DashboardProfilePage', segment: 'dashboard-profile', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/dashboard-stats/dashboard-stats.module#DashboardStatsPageModule', name: 'DashboardStatsPage', segment: 'dashboard-stats', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/dashboard/dashboard.module#DashboardPageModule', name: 'DashboardPage', segment: 'dashboard', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
@@ -1053,7 +1053,7 @@ var MockMediaSearch = [{ "L_ListingID": "7128506", "L_Class": "Single Family Det
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_contact_contact__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_dashboard_dashboard__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_buyers_buyers__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_agents_agents__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_agents_agents__ = __webpack_require__(102);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

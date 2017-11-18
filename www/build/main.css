@@ -25710,6 +25710,47 @@ ion-navbar.toolbar {
   width: auto;
 }
 
+.ion-page .content ion-list.list {
+  margin: 0 0 45px;
+}
+
+.ion-page .content ion-list.list ion-item.exisiting-property-search.item-block.item-input {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: #eee;
+  border-radius: 15px;
+  padding: 0 20px;
+}
+
+.ion-page .content ion-list.list ion-item.exisiting-property-search.item-block.item-input .item-inner {
+  border: none;
+}
+
+.ion-page .content ion-list.list > h4 {
+  margin: 25px 0 0 0;
+  text-transform: capitalize;
+  color: #777;
+}
+
+.ion-page .content ion-list.list > .item-block:last-child {
+  border-bottom: none;
+}
+
+.ion-page .content ion-list.list > .item-block:last-child .item-inner {
+  border-bottom: 0.55px solid #c8c7cc;
+}
+
+.ion-page .content ion-list.list ion-list-header.item.list-header {
+  padding: 0;
+  margin: 15px 0 15px 0;
+}
+
+.ion-page .content ion-list.list ion-item.item {
+  padding: 0 0 0 5px;
+}
+
 .logo {
   font-family: 'Playfair Display', serif;
   display: -webkit-box;
